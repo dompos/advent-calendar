@@ -1,7 +1,7 @@
 
 const HomePage = () => {
   return (
-    <div className="font-cinzel text-xl">HomePage</div>
+    <div className="font-candy text-5xl">M piac o pe</div>
   )
 }
 

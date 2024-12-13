@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'cinzel' : ['Cinzel', 'sans-serif'],
+        'cinzel': ['Cinzel', 'sans-serif'],
+        'candy':  ['Emilys Candy', 'sans-serif'],
       }
     },
   },
