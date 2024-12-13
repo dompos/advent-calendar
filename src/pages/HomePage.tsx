@@ -1,7 +1,9 @@
 
 const HomePage = () => {
   return (
-    <div className="font-candy text-5xl">M piac o pe</div>
+    <div>
+      <img className="animate-fadeOutTopRight" src="src/assets/img/heroImage.png" alt="Merry Christmas" />
+    </div>
   )
 }
 
