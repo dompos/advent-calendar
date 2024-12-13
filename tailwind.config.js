@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+import { withAnimations } from 'animated-tailwindcss';
+
+export default withAnimations({
+  // your (existing) Tailwind CSS config here
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -13,4 +16,5 @@ export default {
     },
   },
   plugins: [],
-}
+  
+})
