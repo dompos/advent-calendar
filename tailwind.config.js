@@ -12,7 +12,10 @@ export default withAnimations({
       fontFamily: {
         'cinzel': ['Cinzel', 'sans-serif'],
         'candy':  ['Emilys Candy', 'sans-serif'],
-      }
+      },
+      colors: {
+        bagPink: '#fe5d7e'
+      },
     },
   },
   plugins: [],
