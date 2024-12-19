@@ -1,8 +1,20 @@
+import Hero from "../components/Hero"
 
 const HomePage = () => {
+
+
   return (
-    <div className="h-screen flex justify-center items-center bg-bagPink">
-      <img className="animate-zoomInDown animate-slower size-96" src="src/assets/img/heroImage.png" alt="Merry Christmas" />
+    <div className="h-screen flex flex-col justify-center items-center bg-pink-300">
+      <Hero />
+      {/* <div className="grid grid-cols-2 gap-2">
+        <div className="bg-black size-48"></div>
+        <div className="bg-black size-48"></div>
+        <div className="bg-black size-48"></div>
+        <div className="bg-black size-48"></div>
+        <div className="bg-black size-48"></div>
+        <div className="bg-black size-48"></div>
+        <div className="bg-black size-48"></div>
+      </div> */}
     </div>
   )
 }
