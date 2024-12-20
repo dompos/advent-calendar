@@ -1,11 +1,17 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
+import { HideContext } from "../pages/HomePage";
 
 const Hero = () => {
-    const [animate, setAnimate] = useState('animate-zoomInDown animate-slower');
+    const [animate, setAnimate] = useState<string>('animate-zoomInDown animate-slower');
     const shake: string = 'animate-shakeX animate-infinite animate-slower';
+    const setHide = useContext(HideContext);
 
     function handleClick(): void {
         setAnimate('animate-zoomOutUp animate-duration-[1.5s]');
+        setTimeout(() => {
+            if(setHide !== undefined) setHide('animate-slideInUp animate-slow');
+            setAnimate('hidden');
+        }, 1500);
     }
 
     function animateShake(): void {
