@@ -28,7 +28,7 @@ const HomePage = () => {
 
   for (let i = 0; i < 24; i++) {
     const dayNumber: string = i < 9 ? '0' + (i + 1) : String(i + 1);
-    listDayButton.push(<DayButton onClick={handleOpenModal} dayNumber={dayNumber} />);
+    listDayButton.push(<DayButton key={i} onClick={handleOpenModal} dayNumber={dayNumber} />);
   }
 
 
