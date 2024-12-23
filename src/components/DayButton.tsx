@@ -8,7 +8,7 @@ interface DayButtonProp {
 
 const Daybutton = ({ dayNumber, onClick }: DayButtonProp) => {
     const [box, setBox] = useState<string>('src/assets/icon/surpriseBoxClosed.png');
-    const [animate, setAnimate] = useState<string>('animate-shakeX animate-infinite animate-slow');
+    const [animate, setAnimate] = useState<string>('animate-pulse animate-infinite animate-slow');
 
 
     return (
