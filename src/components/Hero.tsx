@@ -3,7 +3,7 @@ import { HideContext } from "../pages/HomePage";
 
 const Hero = () => {
     const [animate, setAnimate] = useState<string>('animate-zoomInDown animate-slower');
-    const shake: string = 'animate-shakeX animate-infinite animate-slower';
+    const shake: string = 'animate-pulse animate-infinite animate-slower';
     const setHide = useContext(HideContext);
 
     function handleClick(): void {
